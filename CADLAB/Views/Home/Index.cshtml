@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CAD Immersion LAB</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Crash", "Crash", "Home")</h2>
+        <p>With Application Insights you can trace all the crashes in your app.</p>
+        <a href="#"><img src="~/Content/Failed requests.png" /></a>
+</div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Long operation", "LongOperation", "Home")</h2>
+        <p>Application Insights - Proactive detection helps you to find improvement points.</p>
+        <a href="#"><img src="~/Content/Proactive detection.png" /></a>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Custom Events", "CustomEvents", "Home")</h2>
+        <p>You can also send your own events to Application Insights</p>
+        <a href="#"><img src="~/Content/customEvent.png" /></a>
+    </div>
+</div>
